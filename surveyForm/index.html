@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Survey Form</title>
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+          <link rel="stylesheet" href="style.css" />
+     </head>
+     <body>
+          <h1>Survey Form</h1>
+          <div class="container">
+               <p class="center">Let use know we can improve freeCodeCamp</p>
+               <div class="center">
+                    <div class="left"><label for="name">*Name:</label></div>
+                    <div class="right"><input type="text" id="name" placeholder="Enter you name" /></div>
+               </div>
+               <div class="center">
+                    <div class="left"><label for="email">*Email:</label></div>
+                    <div class="right"><input type="email" id="email" placeholder="Enter your Email" /></div>
+               </div>
+               <div class="center">
+                    <div class="left"><label for="age">*Age:</label></div>
+                    <div class="right"><input type="number" id="age" placeholder="Age" /></div>
+               </div>
+               <div class="center">
+                    <div class="left"><label for="role">Which option best describe your current role?</label></div>
+                    <div class="right">
+                         <select name="role" id="role">
+                              <option value="student">Student</option>
+                              <option value="fullTimeJob">Full Time Job</option>
+                              <option value="parttimeworker">Part Time Worker</option>
+                              <option value="preferNotToSay">Prefer Not To Say</option>
+                         </select>
+                    </div>
+               </div>
+               <div class="center" style="display: flex">
+                    <div class="left"><p>*How likely is that you would recommend freeCodeCamp to friend?</p></div>
+                    <div class="right">
+                         <form>
+                              <br />
+                              <input type="radio" id="definitely" name="recommend" value="definitely" />
+                              <label for="definitely">Definitely</label>
+                              <br />
+                              <input type="radio" id="maybe" name="recommend" value="maybe" />
+                              <label for="maybe">Maybe</label>
+                              <br />
+                              <input type="radio" id="notsure" name="recommend" value="notsure" />
+                              <label for="notsure">Not sure</label>
+                         </form>
+                    </div>
+               </div>
+               <div class="center">
+                    <div class="left"><label for="mostliked">What do you like most in FCC:</label></div>
+                    <div class="right">
+                         <select name="mostliked" id="mostliked">
+                              <option value="options">Select an option</option>
+                              <option value="options1">options1</option>
+                              <option value="options2">options1</option>
+                              <option value="options3">options1</option>
+                         </select>
+                    </div>
+               </div>
+               <div class="center" style="display: flex">
+                    <div class="left">
+                         <p>Thing that should be improved in the future<br />(check all that apply)</p>
+                    </div>
+                    <div class="right">
+                         <br />
+                         <input type="radio" id="definitely" name="improve" value="definitely" />
+                         <label for="definitely">Definitely</label>
+                         <br />
+                         <input type="radio" id="maybe" name="improve" value="maybe" />
+                         <label for="maybe">Maybe</label>
+                         <br />
+                         <input type="radio" id="notsure" name="improve" value="notsure" />
+                         <label for="notsure">Not sure</label>
+                    </div>
+               </div>
+               <div class="center">
+                    <input type="submit" placeholder="Submit" />
+               </div>
+          </div>
+     </body>
+</html>
